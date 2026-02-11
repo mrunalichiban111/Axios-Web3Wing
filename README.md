@@ -144,6 +144,7 @@ PRIVATE_KEY=your_private_key_here
 SEPOLIA_RPC_URL=https://eth-sepolia.g.alchemy.com/v2/your_key
 ETHERSCAN_API_KEY=your_etherscan_key
 ```
+make sure ur private key starts with 0x if not add 0x in the starting 
 
 ---
 

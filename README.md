@@ -5,7 +5,7 @@ This guide explains how to deploy a Solidity smart contract to the **Sepolia tes
 
 ---
 
-# 🚀 1️⃣ Install Foundry
+# 1️⃣ Install Foundry
 
 ### Mac / Linux
 
@@ -22,7 +22,7 @@ forge --version
 
 ---
 
-# 📁 2️⃣ Create a New Foundry Project
+# 2️⃣ Create a New Foundry Project
 
 ```bash
 forge init my-project
@@ -40,7 +40,7 @@ foundry.toml
 
 ---
 
-# ✍️ 3️⃣ Write Your Smart Contract
+# 3️⃣ Write Your Smart Contract
 
 Create:
 
@@ -59,7 +59,7 @@ contract MyContract {
 
 ---
 
-# 🛠 4️⃣ Compile the Contract
+# 4️⃣ Compile the Contract
 
 Run from project root:
 
@@ -71,7 +71,7 @@ If there are no errors, compilation is successful.
 
 ---
 
-# 📜 5️⃣ Create Deployment Script
+# 5️⃣ Create Deployment Script
 
 Create:
 
@@ -83,13 +83,13 @@ script/Deploy.s.sol
 
 ---
 
-# 🌐 6️⃣ Get Sepolia RPC URL
+# 6️⃣ Get Sepolia RPC URL
 
 1. Go to **Alchemy** 
 2. Create a new app
 3. Copy the HTTPS endpoint
 
-Example:
+link:
 
 ```
 https://www.alchemy.com/
@@ -97,7 +97,7 @@ https://www.alchemy.com/
 
 ---
 
-# 🔑 7️⃣ Get Your Private Key
+# 7️⃣ Get Your Private Key
 
 From MetaMask:
 
@@ -107,7 +107,7 @@ From MetaMask:
 
 ---
 
-# 🔎 8️⃣ Get Etherscan API Key
+# 8️⃣ Get Etherscan API Key
 
 1. Go to [https://etherscan.io/](https://etherscan.io/)
 2. Create an account
@@ -115,7 +115,7 @@ From MetaMask:
 
 ---
 
-# 📄 9️⃣ Create `.env` File
+# 9️⃣ Create `.env` File
 
 In project root:
 
@@ -133,7 +133,7 @@ ETHERSCAN_API_KEY=your_etherscan_key
 
 ---
 
-# ⚙️ 🔟 Configure Etherscan in `foundry.toml`
+# 🔟 Configure Etherscan in `foundry.toml`
 
 Open `foundry.toml` and add:
 
@@ -144,7 +144,7 @@ sepolia = { key = "${ETHERSCAN_API_KEY}" }
 
 ---
 
-# 📦 1️⃣1️⃣ Load Environment Variables (Mac/Linux)
+# 1️⃣1️⃣ Load Environment Variables (Mac/Linux)
 
 ```bash
 source .env
@@ -152,7 +152,7 @@ source .env
 
 ---
 
-# 🚀 1️⃣2️⃣ Deploy to Sepolia
+# 1️⃣2️⃣ Deploy to Sepolia
 
 ```bash
 forge script script/Deploy.s.sol:Deploy \

@@ -40,6 +40,20 @@ foundry.toml
 
 ---
 
+# Install OpenZeppelin Contracts
+
+If your contract uses OpenZeppelin (ERC20, ERC721, Ownable, etc.), install it:
+```bash
+forge install OpenZeppelin/openzeppelin-contracts
+```
+
+
+After installation, you will see:
+
+lib/openzeppelin-contracts/
+
+---
+
 # 3️⃣ Write Your Smart Contract
 
 Create:
@@ -47,7 +61,7 @@ Create:
 ```
 src/MyContract.sol
 ```
-
+Example :
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -79,7 +93,7 @@ Create:
 script/Deploy.s.sol
 ```
 
-
+see the script from the script folder in repo
 
 ---
 
